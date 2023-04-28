@@ -1,4 +1,4 @@
-j- This file can be loaded by calling `lua require('plugins')` from your init.vim
+-- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
   
   
   
+  use('nvim-tree/nvim-web-devicons')
   
   -- use 'folke/tokyonight.nvim'
 
@@ -59,6 +60,7 @@ return require('packer').startup(function(use)
 -- end})
 --
 use 'luisiacc/gruvbox-baby'
+use {'catppuccin/nvim', as = 'catpuccin'}
 
 -- use {
 --     'nvim-lualine/lualine.nvim',
